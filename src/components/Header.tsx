@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function Header() {
 	return (
-		<div>
+		<header className="container flex items-center justify-between py-10">
 			<p>soumak.</p>
 
 			<nav>
-				<ul>
+				<ul className="flex items-center gap-10">
 					<li>portfolio</li>
 					<li>blog</li>
 					<li>about me</li>
 				</ul>
 			</nav>
-		</div>
+		</header>
 	)
 }

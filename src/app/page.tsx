@@ -8,7 +8,11 @@ export default function Home() {
 		<main>
 			<Header />
 
-			<h1>I’M A FRONTEND DEVELOPER BASED ON INDIA. I MAKE BEAUTIFUL USER INTERFACES FOR DIGITAL PEOPLE</h1>
+			<div className="max-w-6xl mx-auto px-6">
+				<h1 className="text-7xl text-center py-32 font-semibold">
+					I’M A FRONTEND DEVELOPER BASED ON INDIA. I MAKE BEAUTIFUL USER INTERFACES FOR DIGITAL PEOPLE
+				</h1>
+			</div>
 
 			<Projects />
 			<Work />
