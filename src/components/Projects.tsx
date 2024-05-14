@@ -1,39 +1,43 @@
 import React from 'react'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion'
+import { Button } from './ui/button'
+import { Badge } from './ui/badge'
 
 export default function Projects() {
 	return (
 		<section className="container my-28">
-			<h2 className="text-4xl">projects</h2>
+			<h2 className="text-4xl">projects.</h2>
 
 			<div className="my-8">
-				<ProjectItem />
-				<ProjectItem />
+				<Accordion type="multiple">
+					<ProjectItem id="1" />
+					<ProjectItem id="2" />
+					<ProjectItem id="3" />
+				</Accordion>
 			</div>
 		</section>
 	)
 }
 
-function ProjectItem() {
+function ProjectItem({ id }: { id: string }) {
 	return (
-		<div className="border-b flex items-center justify-between px-4 py-3 group">
-			<div className="space-y-1.5">
-				<p className="text-xl">Phone Dipo</p>
-				<div className="flex gap-2 items-center">
-					<div className="border rounded-full text-sm px-1">Next.js</div>
-					<div className="border rounded-full text-sm px-1">Tailwind CSS</div>
+		<AccordionItem value={id}>
+			<AccordionTrigger className="py-3 px-2">
+				<div className="flex flex-col items-start">
+					<p className="text-xl mb-2">Phone Dipo</p>
+					<div className="flex gap-2 items-center">
+						<Badge variant="outline">Next.js</Badge>
+						<Badge variant="outline">Tailwind CSS</Badge>
+					</div>
 				</div>
-			</div>
-
-			<svg
-				className="-rotate-45 group-hover:rotate-0 transition-transform duration-300"
-				xmlns="http://www.w3.org/2000/svg"
-				height="32px"
-				viewBox="0 -960 960 960"
-				width="32px"
-				fill="#e8eaed"
-			>
-				<path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-			</svg>
-		</div>
+			</AccordionTrigger>
+			<AccordionContent>
+				<p>It is a ground breaking e-commerce platform with multi million dollar products.</p>
+				<div className="flex items-center gap-2 mt-4">
+					<Button variant="outline">GitHub</Button>
+					<Button variant="outline">Visit Site</Button>
+				</div>
+			</AccordionContent>
+		</AccordionItem>
 	)
 }
