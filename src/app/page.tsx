@@ -1,4 +1,5 @@
 'use client'
+import AboutMe from '@/components/About'
 import Background from '@/components/Background'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -10,12 +11,12 @@ import { Canvas } from '@react-three/fiber'
 export default function Home() {
 	return (
 		<>
-			<Canvas className="!fixed -z-10" camera={{ position: [2, -3, 10] }}>
-				<OrbitControls />
-				<ambientLight intensity={Math.PI / 2} />
-				<Background />
-			</Canvas>
 			<main className="">
+				<Canvas className="!absolute -z-10 h-screen" camera={{ position: [2, -3, 10] }}>
+					<OrbitControls />
+					<ambientLight intensity={Math.PI / 2} />
+					<Background />
+				</Canvas>
 				<Header />
 
 				<div className="max-w-6xl mx-auto px-6">
@@ -24,6 +25,7 @@ export default function Home() {
 					</h1>
 				</div>
 
+				<AboutMe />
 				<Projects />
 				<Work />
 
