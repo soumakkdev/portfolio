@@ -17,7 +17,7 @@ extend({ NoiseMaterial })
 
 declare module '@react-three/fiber' {
 	interface ThreeElements {
-		noiseMaterial: Object3DNode<NoiseMaterial, typeof NoiseMaterial>
+		noiseMaterial: Object3DNode<typeof NoiseMaterial, typeof NoiseMaterial>
 	}
 }
 
@@ -25,7 +25,7 @@ export default function Background() {
 	const materialRef = useRef(null!)
 
 	useFrame((state) => {
-		materialRef.current.uniforms.uTime.value = state.clock.elapsedTime / 4
+		;(materialRef.current as any).uniforms.uTime.value = state.clock.elapsedTime / 4
 	})
 	return (
 		<mesh>
