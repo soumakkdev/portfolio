@@ -19,10 +19,14 @@ export default function Home() {
 				</Canvas>
 				<Header />
 
-				<div className="max-w-6xl mx-auto px-6">
-					<h1 className="text-7xl text-center py-32 font-semibold">
-						I’M A FRONTEND DEVELOPER BASED ON INDIA. I MAKE BEAUTIFUL USER INTERFACES FOR DIGITAL PEOPLE
+				<div className="max-w-7xl mx-auto px-6 py-32">
+					<h1 className="text-[5rem] uppercase text-center font-bold text-blue-700 mix-blend-luminosity">
+						<span className="text-white">Soumak</span> Dutta
 					</h1>
+					<h2 className="text-6xl text-center text-blue-700 mix-blend-luminosity font-semibold uppercase">
+						Frontend <span className="text-white">Developer</span> crafting stunning <span className="text-white">digital</span> experiences with{' '}
+						<span className="text-white">code</span>
+					</h2>
 				</div>
 
 				<AboutMe />
