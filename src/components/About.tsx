@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutMe() {
 	return (
-		<section className="container my-40">
+		<section className="max-w-6xl mx-auto px-4 my-60">
 			<h2 className="text-3xl text-muted-foreground">about.</h2>
 
 			<div className="grid grid-cols-2 gap-20 my-10">

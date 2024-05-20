@@ -29,7 +29,7 @@
 	.dark {
 		--background: #18181b;
 		--foreground: hsl(0 0% 98%);
-		--card: hsl(240 10% 3.9%);
+		--card: #1f1f23;
 		--card-foreground: hsl(0 0% 98%);
 		--popover: hsl(240 10% 3.9%);
 		--popover-foreground: hsl(0 0% 98%);
@@ -43,7 +43,7 @@
 		--accent-foreground: hsl(0 0% 98%);
 		--destructive: hsl(0 62.8% 30.6%);
 		--destructive-foreground: hsl(0 0% 98%);
-		--border: hsl(240 3.7% 15.9%);
+		--border: #38383b;
 		--input: hsl(240 3.7% 15.9%);
 		--ring: hsl(240 4.9% 83.9%);
 	}

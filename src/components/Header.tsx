@@ -9,7 +9,7 @@ export default function Header() {
 		setTheme(theme === 'light' ? 'dark' : 'light')
 	}
 	return (
-		<header className="container flex items-center justify-between py-10">
+		<header className="max-w-6xl mx-auto px-4 flex items-center justify-between py-10">
 			<p className="font-semibold text-lg">soumak.</p>
 
 			<button className="h-10 w-10 rounded-full border grid place-content-center hover:bg-muted" onClick={toggleTheme}>

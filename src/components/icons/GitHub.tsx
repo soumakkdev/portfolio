@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function GitHub() {
+export default function GitHub({ size = '27', className }: { size?: string; className?: string }) {
 	return (
-		<svg width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+		<svg width={size} height={size} viewBox="0 0 27 27" className={className} xmlns="http://www.w3.org/2000/svg">
 			<path
 				fill-rule="evenodd"
 				clip-rule="evenodd"

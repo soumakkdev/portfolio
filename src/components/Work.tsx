@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Work() {
 	return (
-		<section className="container my-28">
+		<section className="max-w-6xl mx-auto px-4 my-28">
 			<h2 className="text-4xl">work</h2>
 
 			<div className="my-8">
