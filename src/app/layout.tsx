@@ -1,31 +1,12 @@
+import { ThemeProvider } from 'next-themes'
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+import { Poppins } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from '@/lib/theme'
 
-const HKGroteskWide = localFont({
-	src: [
-		{
-			path: '../fonts/HKGroteskWide-Regular.otf',
-			weight: '400',
-			style: 'normal',
-		},
-		{
-			path: '../fonts/HKGroteskWide-Medium.otf',
-			weight: '500',
-			style: 'normal',
-		},
-		{
-			path: '../fonts/HKGroteskWide-SemiBold.otf',
-			weight: '600',
-			style: 'normal',
-		},
-		{
-			path: '../fonts/HKGroteskWide-Bold.otf',
-			weight: '700',
-			style: 'normal',
-		},
-	],
+const poppins = Poppins({
+	subsets: ['latin'],
+	display: 'swap',
+	weight: ['400', '500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -39,9 +20,9 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${HKGroteskWide.className}`}>
-				<ThemeProvider defaultTheme="dark" storageKey="theme">
+		<html lang="en" suppressHydrationWarning>
+			<body className={poppins.className}>
+				<ThemeProvider attribute="class" defaultTheme="dark" storageKey="theme" disableTransitionOnChange>
 					{children}
 				</ThemeProvider>
 			</body>
