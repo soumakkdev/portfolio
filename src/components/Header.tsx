@@ -10,7 +10,9 @@ export default function Header() {
 	}
 	return (
 		<header className="max-w-6xl mx-auto px-4 flex items-center justify-between py-10">
-			<p className="font-semibold text-lg">soumak.</p>
+			<a href="/">
+				<p className="font-semibold text-lg">soumak.</p>
+			</a>
 
 			<button className="h-10 w-10 rounded-full border grid place-content-center hover:bg-muted" onClick={toggleTheme}>
 				{theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
