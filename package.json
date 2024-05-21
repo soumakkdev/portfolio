@@ -20,6 +20,7 @@
     "glslify-loader": "^2.0.0",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
+    "next-themes": "^0.3.0",
     "raw-loader": "^4.0.2",
     "react": "^18",
     "react-dom": "^18",

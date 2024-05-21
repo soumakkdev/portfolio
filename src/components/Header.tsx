@@ -1,17 +1,20 @@
+import { Moon, Sun } from 'lucide-react'
+import { useTheme } from 'next-themes'
 import React from 'react'
 
 export default function Header() {
-	return (
-		<header className="container flex items-center justify-between py-10">
-			<p>soumak.</p>
+	const { setTheme, theme } = useTheme()
 
-			<nav>
-				<ul className="flex items-center gap-10">
-					<li>portfolio</li>
-					<li>blog</li>
-					<li>about me</li>
-				</ul>
-			</nav>
+	function toggleTheme() {
+		setTheme(theme === 'light' ? 'dark' : 'light')
+	}
+	return (
+		<header className="max-w-6xl mx-auto px-4 flex items-center justify-between py-10">
+			<p className="font-semibold text-lg">soumak.</p>
+
+			<button className="h-10 w-10 rounded-full border grid place-content-center hover:bg-muted" onClick={toggleTheme}>
+				{theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+			</button>
 		</header>
 	)
 }
