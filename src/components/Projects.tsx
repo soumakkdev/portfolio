@@ -44,10 +44,10 @@ const projects: IProject[] = [
 
 export default function Projects() {
 	return (
-		<section className="max-w-6xl mx-auto px-4 my-60">
+		<section className="max-w-6xl mx-auto px-4 my-20 lg:my-60">
 			<h2 className="text-3xl text-muted-foreground">projects.</h2>
 
-			<div className="my-8 grid grid-cols-2 gap-10">
+			<div className="my-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
 				{projects?.map((project, idx) => (
 					<ProjectItem key={idx} project={project} />
 				))}
