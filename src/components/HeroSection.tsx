@@ -1,5 +1,6 @@
-import React, { ReactNode } from 'react'
-import X from './icons/X'
+import { SocialLinks } from '@/lib/const'
+import { FileText } from 'lucide-react'
+import { ReactNode } from 'react'
 import GitHub from './icons/GitHub'
 import LinkedIn from './icons/LinkedIn'
 
@@ -14,12 +15,24 @@ export default function HeroSection() {
 				</p>
 
 				<div className="flex gap-4">
-					<SocialBtn>
-						<GitHub />
-					</SocialBtn>
-					<SocialBtn>
-						<LinkedIn />
-					</SocialBtn>
+					<a href={SocialLinks.Github} target="_blank" rel="noreferrer">
+						<SocialBtn>
+							<GitHub />
+						</SocialBtn>
+					</a>
+
+					<a href={SocialLinks.LinkedIn} target="_blank" rel="noreferrer">
+						<SocialBtn>
+							<LinkedIn />
+						</SocialBtn>
+					</a>
+
+					<a href="/resume.pdf" target="_blank" rel="noreferrer">
+						<button className="h-12 px-5 border rounded-full border-primary hover:bg-accent inline-flex items-center">
+							<FileText className="h-5 w-5 mr-2 -ml-0.5" />
+							Resume
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -27,5 +40,5 @@ export default function HeroSection() {
 }
 
 function SocialBtn({ children }: { children: ReactNode }) {
-	return <button className="h-12 w-12 border rounded-full border-foreground fill-foreground grid place-content-center">{children}</button>
+	return <button className="h-12 w-12 border rounded-full border-primary hover:bg-accent fill-foreground grid place-content-center">{children}</button>
 }
