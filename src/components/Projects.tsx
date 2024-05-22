@@ -20,25 +20,25 @@ const projects: IProject[] = [
 		site: 'https://phonedipo.com/',
 	},
 	{
-		name: 'Notes',
+		name: 'Note Tree',
 		description: 'It is a simple note taking app built with Next and Tailwind',
 		tags: ['Next.js', 'Tailwind CSS', 'shadcn/ui'],
 		github: 'https://github.com/soumakkdev/notes-app',
-		site: '',
+		site: 'https://note-tree.netlify.app/',
 	},
 	{
-		name: 'Calender',
-		description: 'A simple calender app to track events, inspired by Google and Notion calender',
+		name: 'Nova Calendar',
+		description: 'A simple calendar app to track events, inspired by Google and Notion calender',
 		tags: ['Next.js', 'MUI'],
 		github: 'https://github.com/soumakkdev/calendar-app',
-		site: '',
+		site: 'https://nova-calendar.netlify.app/',
 	},
 	{
-		name: 'Color Picker',
+		name: 'Hue Picker',
 		description: 'A simple color picker that shows a detailed color options',
 		tags: ['Next.js', 'MUI'],
 		github: 'https://github.com/soumakkdev/color-picker',
-		site: '',
+		site: 'https://hue-picker.netlify.app/',
 	},
 ]
 
@@ -71,16 +71,20 @@ function ProjectItem({ project }: { project: IProject }) {
 
 			<div className="flex items-end justify-end gap-2 mt-4 flex-1">
 				{project.github ? (
-					<Button variant="secondary" className="fill-primary pl-3 pr-3.5">
-						<GitHub size="24" className="mr-2" />
-						GitHub
+					<Button variant="secondary" className="fill-primary pl-3 pr-3.5" asChild>
+						<a href={project.github} target="_blank" rel="noreferrer">
+							<GitHub size="24" className="mr-2" />
+							<span>GitHub</span>
+						</a>
 					</Button>
 				) : null}
 
 				{project.site ? (
-					<Button variant="secondary" className="pl-3 pr-3.5">
-						<Link className="h-4 w-4 mr-2" />
-						Visit Site
+					<Button variant="secondary" className="pl-3 pr-3.5" asChild>
+						<a href={project.site} target="_blank" rel="noreferrer">
+							<Link className="h-4 w-4 mr-2" />
+							<span>Visit Site</span>
+						</a>
 					</Button>
 				) : null}
 			</div>
