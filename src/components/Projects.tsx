@@ -69,7 +69,7 @@ function ProjectItem({ project }: { project: IProject }) {
 				))}
 			</div>
 
-			<div className="flex items-end justify-end gap-2 mt-4 flex-1">
+			<div className="flex items-end justify-end gap-2 mt-6 flex-1">
 				{project.github ? (
 					<Button variant="secondary" className="fill-primary pl-3 pr-3.5" asChild>
 						<a href={project.github} target="_blank" rel="noreferrer">
