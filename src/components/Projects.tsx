@@ -29,14 +29,14 @@ const projects: IProject[] = [
 	{
 		name: 'Nova Calendar',
 		description: 'A simple calendar app to track events, inspired by Google and Notion calender',
-		tags: ['Next.js', 'MUI'],
+		tags: ['Vite', 'React', 'Tailwind CSS'],
 		github: 'https://github.com/soumakkdev/calendar-app',
 		site: 'https://nova-calendar.netlify.app/',
 	},
 	{
 		name: 'Hue Picker',
 		description: 'A simple color picker that shows a detailed color options',
-		tags: ['Next.js', 'MUI'],
+		tags: ['Vite', 'React', 'Tailwind CSS'],
 		github: 'https://github.com/soumakkdev/color-picker',
 		site: 'https://hue-picker.netlify.app/',
 	},
