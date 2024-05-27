@@ -31,8 +31,9 @@ export const metadata: Metadata = {
 	],
 	authors: [{ name: 'soumakkdev', url: 'https://github.com/soumakkdev' }],
 	openGraph: {
-		title: 'Soumak Dutta',
-		description: 'Frontend Developer crafting web experiences',
+		title: 'Soumak Dutta | Frontend Developer Portfolio',
+		description:
+			'Portfolio of Soumak Dutta, an experienced web developer specializing in creating visually appealing and highly functional web experiences',
 		url: 'https://soumak.dev',
 		type: 'website',
 	},
