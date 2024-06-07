@@ -8,7 +8,7 @@ export default function AboutMe() {
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-10">
 				<article className=" leading-relaxed space-y-5">
 					<p>
-						Hello, I&apos;m Soumak Dutta, a seasoned Frontend Developer with over 3 years of experience in creating visually appealing and
+						Hello, I&apos;m Soumak Dutta, a seasoned Frontend Developer with over 4 years of experience in creating visually appealing and
 						user-friendly websites. I specialize in building high-quality enterprise applications and modern e-commerce platforms using React.js,
 						Next.js, Tailwind CSS, and TypeScript.
 					</p>

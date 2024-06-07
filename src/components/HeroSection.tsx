@@ -3,6 +3,7 @@ import { FileText } from 'lucide-react'
 import { ReactNode } from 'react'
 import GitHub from './icons/GitHub'
 import LinkedIn from './icons/LinkedIn'
+import AnimatedButton from './ui/AnimatedButton'
 
 export default function HeroSection() {
 	return (
@@ -16,33 +17,18 @@ export default function HeroSection() {
 				</p>
 
 				<div className="flex gap-4">
-					<a
-						href={SocialLinks.Github}
-						target="_blank"
-						rel="noreferrer"
-						className="h-12 w-12 border rounded-full border-primary hover:bg-accent fill-foreground grid place-content-center"
-					>
+					<AnimatedButton href={SocialLinks.Github} target="_blank" rel="noreferrer" className="h-12 w-12">
 						<GitHub />
-					</a>
+					</AnimatedButton>
 
-					<a
-						href={SocialLinks.LinkedIn}
-						target="_blank"
-						rel="noreferrer"
-						className="h-12 w-12 border rounded-full border-primary hover:bg-accent fill-foreground grid place-content-center"
-					>
+					<AnimatedButton href={SocialLinks.LinkedIn} target="_blank" rel="noreferrer" className="h-12 w-12">
 						<LinkedIn />
-					</a>
+					</AnimatedButton>
 
-					<a
-						href="/resume.pdf"
-						target="_blank"
-						rel="noreferrer"
-						className="h-12 px-5 border rounded-full border-primary hover:bg-accent inline-flex items-center"
-					>
+					<AnimatedButton href="/resume.pdf" target="_blank" rel="noreferrer" className="h-12 px-4">
 						<FileText className="h-5 w-5 mr-2 -ml-0.5" />
 						Resume
-					</a>
+					</AnimatedButton>
 				</div>
 			</div>
 		</div>

@@ -2,6 +2,7 @@ import { Link } from 'lucide-react'
 import GitHub from './icons/GitHub'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
+import AnimatedButton from './ui/AnimatedButton'
 
 interface IProject {
 	name: string
@@ -14,7 +15,7 @@ interface IProject {
 const projects: IProject[] = [
 	{
 		name: 'PhoneDipo',
-		description: 'It is a ground breaking e-commerce platform with multi million dollar products.',
+		description: 'An ecommerce platform to buy, sell and repair mobile phones. Its made with Next.js and MUI',
 		tags: ['Next.js', 'MUI'],
 		github: '',
 		site: 'https://phonedipo.com/',
@@ -61,31 +62,27 @@ function ProjectItem({ project }: { project: IProject }) {
 		<div className="bg-card p-8 rounded-3xl border flex flex-col">
 			<p className="text-xl font-medium mb-2">{project.name}</p>
 			<p className="my-4 text-sm text-muted-foreground">{project.description}</p>
-			<div className="flex gap-2 items-center">
+			{/* <div className="flex gap-2 items-center">
 				{project.tags?.map((tag, idx) => (
 					<Badge key={idx} variant="default">
 						{tag}
 					</Badge>
 				))}
-			</div>
+			</div> */}
 
 			<div className="flex items-end justify-end gap-2 mt-6 flex-1">
 				{project.github ? (
-					<Button variant="secondary" className="fill-primary pl-3 pr-3.5" asChild>
-						<a href={project.github} target="_blank" rel="noreferrer">
-							<GitHub size="24" className="mr-2" />
-							<span>GitHub</span>
-						</a>
-					</Button>
+					<AnimatedButton href={project.github} target="_blank" rel="noreferrer" className="h-10 pl-3 pr-3.5">
+						<GitHub size="24" className="mr-2" />
+						<span className="text-sm">GitHub</span>
+					</AnimatedButton>
 				) : null}
 
 				{project.site ? (
-					<Button variant="secondary" className="pl-3 pr-3.5" asChild>
-						<a href={project.site} target="_blank" rel="noreferrer">
-							<Link className="h-4 w-4 mr-2" />
-							<span>Visit Site</span>
-						</a>
-					</Button>
+					<AnimatedButton href={project.site} target="_blank" rel="noreferrer" className="h-10 pl-3 pr-3.5">
+						<Link className="h-4 w-4 mr-2" />
+						<span className="text-sm">Visit Site</span>
+					</AnimatedButton>
 				) : null}
 			</div>
 		</div>
