@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React from 'react'
 
-export default function AnimatedButton(props) {
+export default function AnimatedButton(props: any) {
 	return (
 		<a
 			{...props}
