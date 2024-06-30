@@ -1,8 +1,10 @@
-import { Link } from 'lucide-react'
-import GitHub from './icons/GitHub'
-import { Badge } from './ui/badge'
-import { Button } from './ui/button'
-import AnimatedButton from './ui/AnimatedButton'
+import { ArrowUpRight, Link } from 'lucide-react'
+import GitHub from '../../components/icons/GitHub'
+import { Badge } from '../../components/ui/badge'
+import { Button } from '../../components/ui/button'
+import AnimatedButton from '../../components/ui/AnimatedButton'
+import LinkButton from '../../components/ui/LinkButton'
+import Section from '../../components/ui/Section'
 
 interface IProject {
 	name: string
@@ -45,44 +47,37 @@ const projects: IProject[] = [
 
 export default function Projects() {
 	return (
-		<section className="max-w-6xl mx-auto px-4 my-20 lg:my-60">
-			<h2 className="text-3xl text-muted-foreground">projects.</h2>
-
-			<div className="my-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
+		<Section title="projects" description="some of my hand picked projects">
+			<div className="my-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:-mx-8">
 				{projects?.map((project, idx) => (
 					<ProjectItem key={idx} project={project} />
 				))}
 			</div>
-		</section>
+		</Section>
 	)
 }
 
 function ProjectItem({ project }: { project: IProject }) {
 	return (
-		<div className="bg-card p-8 rounded-3xl border flex flex-col">
-			<p className="text-xl font-medium mb-2">{project.name}</p>
-			<p className="my-4 text-sm text-muted-foreground">{project.description}</p>
-			{/* <div className="flex gap-2 items-center">
-				{project.tags?.map((tag, idx) => (
-					<Badge key={idx} variant="default">
-						{tag}
-					</Badge>
-				))}
-			</div> */}
+		<div className="bg-card p-8 rounded-3xl flex flex-col">
+			{/* <img src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ" className="rounded-2xl mb-6" /> */}
 
-			<div className="flex items-end justify-end gap-2 mt-6 flex-1">
+			<p className="text-2xl font-medium mb-2">{project.name}</p>
+			<p className="mb-4 text-muted-foreground">{project.description}</p>
+
+			<div className="flex items-end gap-6 mt-6 flex-1">
 				{project.github ? (
-					<AnimatedButton href={project.github} target="_blank" rel="noreferrer" className="h-10 pl-3 pr-3.5">
-						<GitHub size="24" className="mr-2" />
-						<span className="text-sm">GitHub</span>
-					</AnimatedButton>
+					<LinkButton href={project.github} target="_blank" rel="noreferrer">
+						<span>GitHub</span>
+						<ArrowUpRight className="h-5 w-5 ml-2" />
+					</LinkButton>
 				) : null}
 
 				{project.site ? (
-					<AnimatedButton href={project.site} target="_blank" rel="noreferrer" className="h-10 pl-3 pr-3.5">
-						<Link className="h-4 w-4 mr-2" />
-						<span className="text-sm">Visit Site</span>
-					</AnimatedButton>
+					<LinkButton href={project.site} target="_blank" rel="noreferrer">
+						<span>Visit site</span>
+						<ArrowUpRight className="h-5 w-5 ml-2" />
+					</LinkButton>
 				) : null}
 			</div>
 		</div>

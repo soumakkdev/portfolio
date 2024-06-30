@@ -1,12 +1,11 @@
+import Section from '@/components/ui/Section'
 import React from 'react'
 
 export default function AboutMe() {
 	return (
-		<section className="max-w-6xl mx-auto px-4 my-20 lg:my-60">
-			<h2 className="text-3xl text-muted-foreground">about.</h2>
-
+		<Section title="about me">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-10">
-				<article className=" leading-relaxed space-y-5">
+				<article className="leading-relaxed space-y-5">
 					<p>
 						Hello, I&apos;m Soumak Dutta, a seasoned Frontend Developer with over 4 years of experience in creating visually appealing and
 						user-friendly websites. I specialize in building high-quality enterprise applications and modern e-commerce platforms using React.js,
@@ -23,9 +22,9 @@ export default function AboutMe() {
 					</p>
 				</article>
 				<figure className="px-10 lg:px-20 col-start-1 row-start-1 lg:col-start-auto lg:row-start-auto">
-					<img src="/avatar.jpg" alt="Me" className="rounded-3xl" />
+					<img src="/avatar.jpg" alt="me" className="rounded-3xl" />
 				</figure>
 			</div>
-		</section>
+		</Section>
 	)
 }
