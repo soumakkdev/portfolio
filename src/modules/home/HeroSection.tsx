@@ -6,7 +6,9 @@ import AnimatedButton from '../../components/ui/AnimatedButton'
 
 export default function HeroSection() {
 	return (
-		<div className="max-w-6xl mx-auto px-4">
+		<div className="max-w-6xl mx-auto px-4 relative">
+			<div className="-z-10 absolute blur-[200px] rounded-full -top-[500px] -left-[100px] h-[200px] w-[1200px] rotate-[30deg] origin-left bg-[#298ccf]"></div>
+
 			<div className="max-w-4xl  my-20">
 				<h1 className="text-5xl lg:text-[4.2rem] leading-tight font-bold mb-6">Frontend Developer crafting web experiences</h1>
 

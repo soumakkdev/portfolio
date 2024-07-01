@@ -9,7 +9,7 @@ import Work from '@/modules/home/Work'
 export default function Home() {
 	return (
 		<>
-			<main className="">
+			<main>
 				<Header />
 
 				<HeroSection />
