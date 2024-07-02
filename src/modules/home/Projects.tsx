@@ -1,15 +1,10 @@
-import { ArrowUpRight, Link } from 'lucide-react'
-import GitHub from '../../components/icons/GitHub'
-import { Badge } from '../../components/ui/badge'
-import { Button } from '../../components/ui/button'
-import AnimatedButton from '../../components/ui/AnimatedButton'
+import { ArrowUpRight } from 'lucide-react'
 import LinkButton from '../../components/ui/LinkButton'
 import Section from '../../components/ui/Section'
 
 interface IProject {
 	name: string
 	description: string
-	tags: string[]
 	github?: string
 	site?: string
 }
@@ -17,29 +12,25 @@ interface IProject {
 const projects: IProject[] = [
 	{
 		name: 'PhoneDipo',
-		description: 'An ecommerce platform to buy, sell and repair mobile phones. Its made with Next.js and MUI',
-		tags: ['Next.js', 'MUI'],
+		description: 'An ecommerce platform to buy, sell and repair mobile phones',
 		github: '',
 		site: 'https://phonedipo.com/',
 	},
 	{
-		name: 'Note Tree',
-		description: 'It is a simple note taking app built with Next and Tailwind',
-		tags: ['Next.js', 'Tailwind CSS', 'shadcn/ui'],
-		github: 'https://github.com/soumakkdev/notes-app',
-		site: 'https://note-tree.netlify.app/',
+		name: 'Zylo',
+		description: 'Zylo is a all in one app for task management, notes and todo list.',
+		github: 'https://github.com/soumakkdev/zylo-app',
+		site: 'https://zylo-app.netlify.app/',
 	},
 	{
 		name: 'Nova Calendar',
 		description: 'A simple calendar app to track events, inspired by Google and Notion calender',
-		tags: ['Vite', 'React', 'Tailwind CSS'],
 		github: 'https://github.com/soumakkdev/calendar-app',
 		site: 'https://nova-calendar.netlify.app/',
 	},
 	{
 		name: 'Hue Picker',
 		description: 'A simple color picker that shows a detailed color options',
-		tags: ['Vite', 'React', 'Tailwind CSS'],
 		github: 'https://github.com/soumakkdev/color-picker',
 		site: 'https://hue-picker.netlify.app/',
 	},
