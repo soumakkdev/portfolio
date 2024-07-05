@@ -18,13 +18,13 @@ const projects: IProject[] = [
 	},
 	{
 		name: 'Zylo',
-		description: 'Zylo is a all in one app for task management, notes and todo list.',
+		description: 'Zylo is a task management application',
 		github: 'https://github.com/soumakkdev/zylo-app',
 		site: 'https://zylo-app.netlify.app/',
 	},
 	{
 		name: 'Nova Calendar',
-		description: 'A simple calendar app to track events, inspired by Google and Notion calender',
+		description: 'A simple calendar app to track events, inspired by Google calender',
 		github: 'https://github.com/soumakkdev/calendar-app',
 		site: 'https://nova-calendar.netlify.app/',
 	},

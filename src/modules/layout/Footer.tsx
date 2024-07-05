@@ -2,7 +2,7 @@ import { SocialLinks } from '@/lib/const'
 
 export default function Footer() {
 	return (
-		<section className="max-w-6xl mx-auto px-4 mt-20 mb-12">
+		<section className="max-w-6xl mx-auto px-6 mt-20 mb-12">
 			<div className="flex justify-between flex-col gap-5 lg:flex-row">
 				<div className="flex gap-8">
 					<a href={SocialLinks.Github} className="hover:underline" target="_blank" rel="noreferrer">

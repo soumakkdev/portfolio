@@ -9,7 +9,7 @@ interface ILinkButton extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 export default function LinkButton(props: ILinkButton) {
 	const { children, className, ...rest } = props
 	return (
-		<a {...rest} className={cn('inline-flex items-center ', className)}>
+		<a {...rest} className={cn('inline-flex text-sm items-center ', className)}>
 			{children}
 		</a>
 	)

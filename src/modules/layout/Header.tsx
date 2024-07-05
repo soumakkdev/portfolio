@@ -9,7 +9,7 @@ export default function Header() {
 		setTheme(theme === 'light' ? 'dark' : 'light')
 	}
 	return (
-		<header className="max-w-6xl mx-auto px-4 flex items-center justify-between py-10">
+		<header className="max-w-6xl mx-auto px-6 flex items-center justify-between py-10">
 			<a href="/">
 				<p className="font-semibold text-lg">soumak.</p>
 			</a>
