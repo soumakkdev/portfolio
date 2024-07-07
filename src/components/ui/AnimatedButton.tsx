@@ -1,11 +1,12 @@
 import clsx from 'clsx'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function AnimatedButton(props: any) {
 	return (
-		<a
+		<motion.a
 			{...props}
-			className={clsx('relative inline-flex items-center justify-center rounded-2xl fill-foreground hover:bg-muted', props.className)}
-		></a>
+			className={clsx('relative text-sm inline-flex items-center justify-center rounded-full fill-foreground bg-muted', props.className)}
+		></motion.a>
 	)
 }
