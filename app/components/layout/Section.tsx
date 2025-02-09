@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 export default function Section(props: { title: string; description?: string; children: ReactNode }) {
 	const { children, title, description } = props

@@ -1,10 +1,10 @@
-import MUI from '@/components/icons/MUI'
-import NextJs from '@/components/icons/Nextjs'
-import Reactjs from '@/components/icons/Reactjs'
-import Tailwind from '@/components/icons/Tailwind'
-import TypeScript from '@/components/icons/TypeScript'
-import Vite from '@/components/icons/Vite'
-import { SVGProps } from 'react'
+import type { SVGProps } from 'react'
+import MUI from '~/icons/MUI'
+import Nextjs from '~/icons/Nextjs'
+import Reactjs from '~/icons/Reactjs'
+import Tailwind from '~/icons/Tailwind'
+import TypeScript from '~/icons/TypeScript'
+import Vite from '~/icons/Vite'
 
 enum Tech {
 	'React' = 'react',
@@ -73,7 +73,7 @@ export const techStackInfo: Record<
 		title: 'React',
 	},
 	[Tech.Next]: {
-		icon: NextJs,
+		icon: Nextjs,
 		link: 'https://nextjs.org/',
 		title: 'Next.js',
 	},
