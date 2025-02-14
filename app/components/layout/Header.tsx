@@ -16,9 +16,9 @@ export default function Header() {
 					<li>
 						<LinkButton text="Projects" hideArrow href="#projects"></LinkButton>
 					</li>
-					<li>
+					{/* <li>
 						<LinkButton text="Blogs" hideArrow href="/blogs"></LinkButton>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 		</header>

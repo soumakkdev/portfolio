@@ -33,14 +33,14 @@ export const projects: IProject[] = [
 		image: '/images/phonedipo.png',
 		techstack: [Tech.React, Tech.Next, Tech.TypeScript, Tech.MUI],
 	},
-	{
-		name: 'Zylo',
-		description: 'Zylo is a task management application',
-		github: 'https://github.com/soumakkdev/zylo-app',
-		site: 'https://zylo-app.netlify.app/',
-		image: '/images/zylo.png',
-		techstack: [Tech.React, Tech.Next, Tech.TypeScript, Tech.Tailwind],
-	},
+	// {
+	// 	name: 'Zylo',
+	// 	description: 'Zylo is a task management application',
+	// 	github: 'https://github.com/soumakkdev/zylo-app',
+	// 	site: 'https://zylo-app.netlify.app/',
+	// 	image: '/images/zylo.png',
+	// 	techstack: [Tech.React, Tech.Next, Tech.TypeScript, Tech.Tailwind],
+	// },
 	{
 		name: 'Nova Calendar',
 		description: 'A simple calendar app to track events, inspired by Google calender',
