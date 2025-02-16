@@ -48,7 +48,9 @@ const metadata = {
 
 export default function Home() {
 	return (
-		<>
+		<div className="relative">
+			<canvas id="hero-canvas" className="absolute top-0 left-0 right-0 h-screen overflow-hidden w-full"></canvas>
+
 			<Header />
 
 			<HeroSection />
@@ -58,6 +60,6 @@ export default function Home() {
 			<AboutMe />
 
 			<Footer />
-		</>
+		</div>
 	)
 }
