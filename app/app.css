@@ -3,11 +3,17 @@
 @theme {
 	--font-sans: 'Parkinsans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 		'Segoe UI Symbol', 'Noto Color Emoji';
+	--color-background: #131718;
+	--color-foreground: #ffffff;
+	--color-card: #181c1d;
+	--color-border: #34393a;
+	--color-primary: #e9bc06;
+	--color-muted-foreground: #71717b;
 }
 
 html,
 body {
-	@apply bg-white dark:bg-zinc-900 text-white;
+	@apply bg-white dark:bg-background text-foreground;
 
 	/* @media (prefers-color-scheme: dark) {
     color-scheme: dark;

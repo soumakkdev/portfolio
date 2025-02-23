@@ -12,15 +12,15 @@ export default function LinkButton(props: ILinkButton) {
 	const { children, className, hideArrow, text, href, ...rest } = props
 	return (
 		<Link
-			to={href ?? '#'}
 			{...rest}
-			className={cn('inline-flex text-sm items-center relative group/link', className)}
+			to={href ?? '#'}
+			className={cn('inline-flex text-sm items-center relative group/link hover:text-primary', className)}
 		>
 			<span>{text}</span>
 			{!hideArrow && (
 				<ArrowUpRight className="h-5 w-5 ml-2 transition-transform duration-300 rotate-45 group-hover/link:rotate-0" />
 			)}
-			<div className="bg-white h-[1px] w-full absolute left-0 top-[110%] scale-x-0 transition-transform duration-500 group-hover/link:scale-x-100 group-hover/link:origin-left origin-right"></div>
+			<div className="bg-white h-[1px] w-full absolute left-0 top-[110%] scale-x-0 scale-y-100 transition-transform duration-500 group-hover/link:scale-x-100 group-hover/link:origin-left origin-right group-hover/link:bg-primary"></div>
 		</Link>
 	)
 }

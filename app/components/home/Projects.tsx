@@ -18,7 +18,7 @@ export default function Projects() {
 function ProjectItem({ project }: { project: IProject }) {
 	return (
 		<div className="relative p-8 group z-0">
-			<div className="absolute h-full w-full transition-all duration-200 ease-out opacity-0 scale-90 group-hover:scale-100 group-hover:opacity-100 inset-0 -z-10 rounded-3xl bg-zinc-800/50 "></div>
+			<div className="absolute h-full w-full transition-all duration-200 ease-out opacity-0 scale-90 group-hover:scale-100 group-hover:opacity-100 inset-0 -z-10 rounded-3xl bg-card border border-border"></div>
 
 			<div className=" flex flex-col lg:flex-row gap-16">
 				<figure className="flex-1">

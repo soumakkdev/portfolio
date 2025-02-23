@@ -1,12 +1,12 @@
 export default function HeroSection() {
 	return (
 		<div className="max-w-6xl mx-auto px-6 relative">
-			<div className="max-w-4xl  my-20">
-				<h1 className="text-5xl lg:text-6xl leading-tight font-semibold mb-6">
-					Frontend Developer crafting web experiences
+			<div className="max-w-5xl mx-auto my-32">
+				<h1 className="text-5xl lg:text-6xl leading-tight font-semibold mb-6 text-center">
+					<span className="text-primary">Front-end Developer</span> crafting beautiful digital experiences
 				</h1>
 
-				<p className="lg:text-xl leading-normal mb-12 text-gray-400">
+				<p className="lg:text-xl leading-normal mb-12 max-w-4xl mx-auto text-muted-foreground text-center">
 					I’m Soumak, a frontend developer based in India, specializing in creating visually appealing and
 					highly functional web experiences. With a keen eye for design, I bring both creativity and precision
 					to every project.
